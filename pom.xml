@@ -2,24 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<modules>
-		<module>kafka-producer-wikimedia</module>
-		<module>kafka-consumer-database</module>
-	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.10</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.skywalker</groupId>
+	<groupId>com.skywalker</groupId>
 	<artifactId>wikimedia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>wikimedia</name>
-	<description>Demo project for Spring Boot and Kafka</description>
+	<name>Wikimedia</name>
+	<description>Spring Boot application showcasing a publish/subscribe architecture with Kafka</description>
 	<packaging>pom</packaging>
+	<modules>
+		<module>wikimedia-producer</module>
+		<module>wikimedia-consumer</module>
+	</modules>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -30,12 +29,13 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+<!--		Test Dependency-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
