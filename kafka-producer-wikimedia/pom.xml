@@ -18,14 +18,6 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource -->
-<!--        <dependency>-->
-<!--            <groupId>com.launchdarkly</groupId>-->
-<!--            <artifactId>okhttp-eventsource</artifactId>-->
-<!--            <version>4.1.0</version>-->
-<!--        </dependency>-->
-
-        <!-- https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource -->
         <dependency>
             <groupId>com.launchdarkly</groupId>
             <artifactId>okhttp-eventsource</artifactId>
